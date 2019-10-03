@@ -3,8 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Chapter_1_FormsExample.ContentPageExample">
     <ContentPage.Padding>
-
-        <!-- Đây là phần code trong Chapter 1 nhưng bị lỗi
         <OnPlatform x:TypeArguments="Thickness">
             <OnPlatform.iOS>
                 10, 20, 10, 5
@@ -12,16 +10,7 @@
             <OnPlatform.Android>
                 10, 0, 10, 5
             </OnPlatform.Android>
-            <OnPlatform.WinPhone>
-                10, 0, 10, 5
-            </OnPlatform.WinPhone>
-        </OnPlatform>-->
-
-        <!-- => Sửa lại. Dùng code này thì không báo lỗi.-->
-        <OnPlatform x:TypeArguments="Thickness"
-                      iOS="10, 20, 10, 5"
-                      Android="10, 0, 10, 5" />
-
+        </OnPlatform>
     </ContentPage.Padding>
     <ContentPage.Content>
         <ScrollView VerticalOptions="FillAndExpand">

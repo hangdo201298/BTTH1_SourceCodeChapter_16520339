@@ -21,6 +21,7 @@ namespace Chapter_1_FormsExample
         {
             ((Button)sender).Text = "It is so!";
         }
+        
         async protected void ImageTapped(object sender, EventArgs e)
         {
             Image image = ((Image)sender);

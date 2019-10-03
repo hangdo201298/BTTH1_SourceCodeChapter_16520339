@@ -9,19 +9,19 @@ using Xamarin.Forms.Xaml;
 
 namespace Chapter_1_FormsExample
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ContentPageExample : ContentPage
-	{
-		public ContentPageExample ()
-		{
-			InitializeComponent ();
-		}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class ContentPageExample : ContentPage
+    {
+        public ContentPageExample()
+        {
+            InitializeComponent();
+        }
 
         protected void ButtonClicked(object sender, EventArgs e)
         {
             ((Button)sender).Text = "It is so!";
         }
-        
+
         async protected void ImageTapped(object sender, EventArgs e)
         {
             Image image = ((Image)sender);
